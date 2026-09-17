@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Position</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Aula sobre Position (Posicionamento em CSS)</h1>
+        <p>Position pode ser <strong>static</strong>, <strong>relative</strong>, <strong>absolute</strong>
+        , <strong>fixed</strong> ou <strong>sticky</strong> </p>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>1. Propriedade <code>Position</code></h2>
+            <p>É uma Propriedade de posicionamento que trabalha com top, right, bottom e left</p>
+    
+            <p>Possiveis valores:</p>
+            <ul>
+                <li><code>Statick</code>: Valor padrão, segue o fluxo normal do documento</li>
+                <li><code>Relative</code>: Posicionado em relação à sua posição original</li>
+                <li><code>Absolute</code>: Posicionado em relação ao elemento pai</li>
+                <li><code>Fixed</code>: Posicionado em relação à janela do navegado (viewport)</li>
+                <li><code>Sticky</code>: Híbrido entre o relative e o fixed</li>
+            </ul>
+        </section>
+
+        <section id="static">
+            <h2>2. Position <code>static</code></h2>
+            <p>O elemento html segue o fluxo normal da página. esse é o nosso padrão</p>
+            <p>top, right, bottom e left não têm efeito neste valor</p>
+
+            <pre>
+                <code>
+                    #caixa {
+                        position:static;
+                        top: 30px;
+                        left: 30px;
+                    }
+                </code>
+            </pre>
+
+            <div id="caixa"></div>
+
+        </section>
+
+        <section id="relative">
+            <h2>3. Position <code>relative</code></h2>
+            <p>O elemento continua ocupando seu espaço original no fluxo do documento, mas será deslogado
+                conforme indicado no top, left, bottom e/ou right</p>
+
+                <pre>
+                    <code>
+                        #demo-relative {
+                            position: relative;
+                            top: 20px;
+                            left: 40px;
+                            background-color: lightblue;
+                            height: 50px;
+                            width: calc(100% - 40px);
+                        }
+                    </code>
+                </pre>
+
+                <div id="demo-relative"></div>
+        </section>
+
+        <section id="absolute">
+            <h2>4. Position <code>absolute</code></h2>
+            <p>O elemento é removido do fluxo normal do documento e passa a se posicionar
+            em relação ao elemento pai</p>
+            <p>O elemento pai deve ter <strong>position relative</strong> </p>
+            <pre>
+                <code>
+                    #container {
+                        position: relative;
+                        height: 200px;
+                        border: 1px dashed grey;
+                        width: 100%;
+                    }
+                    #demo-absolute {
+                        position: absolute;
+                        top: calc(50% - 25px);
+                        right: calc(50% - 50px);
+                        background-color: lightblue;
+                        height: 50px;
+                        width: 100px;
+                    }
+                    
+                </code>
+            </pre>
+            <div id="container">
+                <div id="demo-absolute"></div>
+            </div>
+
+        </section>
+
+        <section id="fixed">
+            <h2>5. Position <code>fixed</code></h2>
+            <p>O elemento sai do fluxo normal do documento e será posicionado em relação 
+            à janela</p>
+
+            <pre>
+                <code>
+                    #demo-fixed {
+                        position: fixed;
+                        bottom: 20px;
+                        right: 10;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 25px;
+                        background-color: lightblue;
+                    }
+    
+                </code>
+            </pre>
+
+            <div id="demo-fixed">
+                <img src="./LOGO.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

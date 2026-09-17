@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastre-se</h1>
+    <p>Formulario destinado ao cadastro de <strong>novos doadores</strong> </p>
+    <form action="">
+        <label for="nome">Nome</label><br>
+        <input type="text" id = "nome" name = "nome" placeholder="Digite seu nome"><br>
+
+        <label for="idade">Idade</label><br>
+        <input type="number" id= "idade" name = "idade" placeholder="Digite sua idade"><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" id = "email" name = "email" placeholder="Digite seu email"><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" id = "senha" name = "senha" placeholder="Digite sua senha"><br>
+
+        <p>Comida Favorita</p>
+        <input type="checkbox" > Pizza  
+        <input type="checkbox" > Lasanha 
+        <input type="checkbox" > Churrasco 
+
+        <P>Qual tipo de comida você prefere?</P>
+        <input type="radio" name="vegana" id="vegana" group="comida">Vegana
+
+        <input type="radio" name="vegetariana" id="vegetariana" group="comida">Vegetariana
+
+        <input type="radio" name="carne" id="carne" group="comida">Carne
+        
+        <input type="radio" name="doces" id="doces" group="comida">Doces
+<br>
+        <input type="button" value="Entrar">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

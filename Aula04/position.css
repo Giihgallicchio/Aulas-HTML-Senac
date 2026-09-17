@@ -1,0 +1,87 @@
+code {
+    background-color: #eef2ff;
+    color: #3730a3;
+    padding: 5px;
+    line-height: 1.6;
+}
+
+#caixa {
+    position:static;
+    top: 30px;
+    left: 30px;
+    background-color: lightblue;
+    height: 50px;
+    width: 100%;
+}
+
+#demo-relative {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    background-color: lightblue;
+    height: 50px;
+    width: calc(100% - 40px);
+}
+
+#container{
+    position: relative;
+    height: 200px;
+    border: 1px dashed grey;
+    width: 100%;
+}
+#demo-absolute {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: calc(50% - 50px);
+    background-color: lightblue;
+    height: 50px;
+    width: 100px;
+}
+
+#demo-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: lightblue;
+}
+
+img {
+    width: 100%;
+}
+
+/*
+Tarefas:
+    1. Centralizar o <h1> e o primeiro <p>
+    2. Adicionar fundo colorido na página inteira
+    3. Límitar a largura do conteúdo da página para 800px e 
+    centralizar na tela
+    4. Colocar uma distancia de 10px entre cada seção
+    5. Arredondar os cantos das seções e deixar colorido
+*/
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: lightcyan;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section#introducao ,#static ,#relative ,#absolute ,#fixed{
+    background-color: lightsteelblue
+}
+
+
+
+
+
