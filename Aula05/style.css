@@ -1,0 +1,80 @@
+:root {
+    --cor-card: #63af69;
+    --cor-p: #FFFEFF;
+    --cor-h3: #EEEEEE;
+    --cor-background-nav: #CB2A27;
+    --cor-background-card: #807E81;
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #434343, #0821ff);
+    background-repeat: no-repeat;
+    block-size: 220vh;
+}
+
+h1 {
+    color: var(--cor-h3);
+    text-align: center;
+}
+
+p {
+    color: var(--cor-h3);
+    text-align: center;
+}
+
+.bolo {
+    border: 1px solid var(--cor-background-card);
+    border-radius: 10px 0 0;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    float: left;
+    margin: 0 20px 20px 0; 
+    border: 3px solid var(--cor-background-nav);
+}
+
+.bolo-info h3 {
+    color: var(--cor-h3);
+    text-align: center;
+    border-radius: 90px;
+}
+
+.bolo-img img {
+    width: 100px;
+    margin: 5px auto;
+    
+}
+
+
+#img-bolo{
+    position: relative;
+    padding-top: 40vh;
+    padding-left: 200px;
+}
+
+
+
+#receita-de-bolo{
+    
+    color: var(--cor-h3);
+    text-align: center;
+    text-decoration: dashed;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1vh;
+    margin: 50px 150px 50px 150px;
+    
+}
+
+
