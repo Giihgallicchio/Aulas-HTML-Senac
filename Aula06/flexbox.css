@@ -1,0 +1,112 @@
+/*Master Reset*/
+* {
+    /* Configurar que a altura e largura contarão com padding e margin */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ 
+header {
+    background-color: rgb(25, 10, 125);
+    color: #fff;
+    text-align: center;
+}
+ 
+header h1 {
+    margin-bottom: 10px;
+}
+ 
+nav.sumario {
+    /* Nav ficará grudada no topo da página */
+    position: sticky;
+    top: 0;
+    /* Garantir que o restante da página se esconderá atrás da nav */
+    z-index: 10;
+}
+ 
+.classe-ul-nav {
+    /* Tira a bullet mark da linha */
+    list-style: none;
+    /* Alterar o comportamento dos elemento da lista -> de coluna para linha */
+    display: flex;
+    /* Cria um distanciamento entre os elementos */
+    gap: 10px;
+    /* Centralizar os elementos na tela */
+    justify-content: center;
+}
+ 
+nav.sumario a {
+    /* Tira o sublinhado do link */
+    text-decoration: none;
+    color: yellow;
+}
+ 
+main {
+    padding-top: 10px;
+}
+ 
+.flex-direction {
+    /* Já altera de coluna para linha */
+    display: flex;
+    gap: 1rem;
+    /* Alterar a direção dos elemento */
+    flex-direction: column;
+    /* Centralização dos elementos */
+    align-items: center;
+}
+ 
+div {
+    font-size: 1.9rem;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    display: flex;
+    /* Centralização horizontal */
+    justify-content: center;
+    /* Centralização vertical */
+    align-items: center;
+}
+ 
+.direction-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+
+}
+ 
+.direction-row-reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+ 
+.direction-column {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+}
+ 
+.direction-column-reverse {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+ 
+.direction-column-reverse,
+.direction-column,
+.direction-row-reverse,
+.direction-row {
+    gap: 1rem;
+    padding: 10px;
+    border-bottom: 1px dashed lightgray;
+    border-top: 1px dashed lightgray;
+}
+
+#justify-content-flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
