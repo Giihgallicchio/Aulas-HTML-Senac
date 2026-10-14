@@ -1,0 +1,137 @@
+
+
+/* Padding e a vborda farão parte do calculo da dimensão do elemento*/
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    /* cor de fundo do elemento */
+    background-color: #F4F4F4;
+    /*cor do texto dentro do elemento */
+    color: #222;
+
+}
+
+a{
+    /*editar a decoração do texto  do link */
+    text-decoration: none;
+    
+}
+
+
+.aviso{
+    /*cor de fundo do elemento*/
+    background-color: #111;
+    /*Cor do texto*/
+    color: white;
+    /*Centralizar o texto*/
+    text-align: center;
+    /*Tamanho da fonte*/
+    font-size: 0.8rem;
+
+}
+
+.topo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background-color: white;
+
+}
+
+.logo{
+    /*Tamanho da fonte */
+    font-size: 1.8rem;
+    /* peso da fonte */
+    font-weight: bold;
+    /*Cor da fonte*/
+    color: #111;
+}
+
+
+.busca{
+    display: flex;
+    width: 100%;
+
+}
+
+
+.busca input{
+    /*Input ocupará todo o espaço que sobra*/
+    flex: 1;
+    /* Permito o input encolher em caso de janelas menores*/
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /*1 numero é esquerda e cima, depois, sentido horario*/
+    border-radius: 20px 0px 0px 20px;
+}
+
+.busca button{
+    /*Tirar a borda*/
+    border: 0;
+    /*cor da fonte*/
+    color: white;
+    /*cor de fundo do elemento*/
+    background: #e6394e;
+    /*Arrendondamento do cantos à direita do botão*/
+    border-radius: 0px 20px 20px 0px;
+    /*Alterando o cursor*/
+    cursor: pointer;
+}
+
+.carrinho {
+    color: #111;
+    /*Definindo o peso da font*/
+    font-weight: bold;
+
+
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 50px;
+    padding: 15px;
+    /* Alteração da cor de fundo do elemento */
+    background: #1d3557;
+}
+
+.menu a{
+    color: white;
+}
+
+/*Hover -> Efeito de passar o mouse encima do elemento*/
+.menu a:hover {
+    text-decoration: underline;
+
+}
+
+
+/*Media Querie - mobile first*/
+/*Configuração para janelas com largura maior do que 700px*/
+@media (min-width: 700px){
+    /*.topo virará linha ao invés de coluna*/
+    .topo{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .busca {
+        flex: 1;
+        max-width: 500px;
+
+
+    }
+
+
+
+}
+
