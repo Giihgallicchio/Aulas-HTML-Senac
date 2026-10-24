@@ -1,11 +1,11 @@
 # PROJETO — HTML & CSS
 
-## 📌 Tema do Projeto
+##  Tema do Projeto
 ### Atividades e Estudos de HTML e CSS — SENAC
 
 ---
 
-## 📝 Descrição do Projeto
+##  Descrição do Projeto
 
 Este repositório reúne atividades, exercícios e conteúdos práticos desenvolvidos durante os estudos das tecnologias fundamentais da web: **HTML5** e **CSS3**.
 
@@ -13,7 +13,7 @@ O projeto tem como objetivo organizar os códigos desenvolvidos ao longo das aul
 
 ---
 
-## 🛠️ Conceitos e Recursos Estudados
+##  Conceitos e Recursos Estudados
 
 * **Estruturação Semântica (HTML5):** Utilização correta de tags estruturais (`<header>`, `<main>`, `<section>`, `<footer>`), criação de formulários, tabelas e links.
 * **Estilização e Design (CSS3):** Aplicação de cores, tipografia, bordas, espaçamentos (Padding/Margin) e seletores avançados.
@@ -21,12 +21,12 @@ O projeto tem como objetivo organizar os códigos desenvolvidos ao longo das aul
 
 ---
 
-## 📁 Organização do Repositório
+##  Organização do Repositório
 
 Os arquivos estão organizados de acordo com a sequência de atividades e exercícios práticos realizados durante as aulas, facilitando a consulta rápida, a revisão técnica e o acompanhamento dos conteúdos desenvolvidos em laboratório.
 
 ---
 
-## 🎓 Referência
+##  Referência
 
 Os conteúdos, desafios e exercícios práticos deste repositório foram desenvolvidos com base nas diretrizes e materiais fornecidos pelo corpo docente da **Faculdade Senac**.
