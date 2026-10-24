@@ -1,4 +1,4 @@
-# 🌐 PROJETO — HTML & CSS
+# PROJETO — HTML & CSS
 
 ## 📌 Tema do Projeto
 ### Atividades e Estudos de HTML e CSS — SENAC
